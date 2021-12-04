@@ -1,0 +1,86 @@
+.corpo-carrinho{
+  margin: 5% 0% 5% 0%;
+}
+
+.container{
+  width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+
+}
+
+input[type=number] {
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}
+
+.excluir-produto{
+  text-decoration: solid;
+  align-self: center;
+  color: red;
+}
+
+.excluir-produto:hover{
+  cursor: pointer;
+}
+
+.foto-produto img{
+  margin-left: 30%;
+  width: 80px;
+  height: 80px;
+}
+
+.descricao-produto{
+  font-size: 1.25rem;
+  margin-left: 0.9375rem;
+  align-self: center;
+}
+
+.row{
+  padding: 2%;
+}
+
+.frete-container{
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.btn{
+  background-color: orange;
+  margin: 0% 0% 0% 1%;
+}
+
+.link-cep{
+  text-decoration: none;
+  color: orange;
+  margin-left: 20px;
+}
+
+.valor-produto{
+  text-align: center;
+  align-self: center;
+}
+
+.input-qnt{
+  padding-left: 0.625rem;
+  width: 20%;
+}
+
+.icon-qnt{
+  margin: 0% 1% 0% 1%;
+}
+
+.col-2{
+  align-self: center;
+}
+
+.valor-frete,
+.valor-produtos,
+.valor-final{
+  float: right;
+  margin-right: 50px;
+}

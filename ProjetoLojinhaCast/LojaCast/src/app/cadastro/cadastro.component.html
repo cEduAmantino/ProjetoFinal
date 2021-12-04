@@ -1,0 +1,60 @@
+
+<app-header></app-header>
+
+
+
+<div class="container formCadastro">
+  <div class="row">
+
+    <div class="col">
+    </div>
+
+    <div class="col corpo-cadastro">
+      <form class="example-form">
+        <div class="tituloCadastro">
+
+          <h2>QUERO ME CADASTRAR</h2>
+
+        </div>
+        <mat-form-field class="input-email-usuario" appearance="fill">
+          <mat-label>Nome</mat-label>
+          <input [(ngModel)]="usuario.nome" type="text" matInput placeholder="Nome Completo"
+            [formControl]="nomeFormControl" required>
+          <mat-error *ngIf="nomeFormControl.invalid">O nome não pode ficar em branco</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="input-email-usuario" appearance="fill">
+          <mat-label>E-mail</mat-label>
+          <input [(ngModel)]="usuario.email" type="email" matInput placeholder="Ex. exemplo@exemplo.com"
+            [formControl]="emailFormControl" required>
+          <mat-error *ngIf="emailFormControl.invalid">O e-mail não pode ficar em branco</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="input-senha-usuario" appearance="fill">
+          <mat-label>Crie sua senha</mat-label>
+          <input [(ngModel)]="senha" type="password" matInput placeholder="" [formControl]="senhaFormControl" required>
+          <mat-error *ngIf="senhaFormControl.invalid">A senha não pode ficar em branco</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="input-cpf-usuario" appearance="fill">
+          <mat-label>CPF ou CNPJ</mat-label>
+          <input matInput [(ngModel)]="usuario.cpf" placeholder="123.XXX.XXX-XX ou 61.XXX.XXX/XXXX-XX"
+            [formControl]="cpfFormControl" required>
+          <mat-error *ngIf="cpfFormControl.invalid">O CPF/CNPJ não pode ficar em branco</mat-error>
+        </mat-form-field>
+
+        <div class="example-button-row">
+          <button (click)="cadastrarLogin()" mat-raised-button>CADASTRAR</button>
+        </div>
+
+      </form>
+
+
+    </div>
+
+    <div class="col">
+    </div>
+
+  </div>
+</div>
+<app-footer></app-footer>

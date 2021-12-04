@@ -1,0 +1,91 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+:root{
+  --background: orange;
+}
+
+.corpo-header{
+  width: 100%;
+  margin: 0;
+  padding: 2% 0% 0% 0%;
+  background-color: orange;
+}
+
+.botaoMenuPrincipal{
+  background: none;
+  border: none;
+  margin-top: 70%;
+}
+
+.botaoMenuPrincipal:hover{
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* !Barra de pesquisa*/
+
+
+.img-icone-loja{
+  width: 45%;
+  margin: 0% 0% 5% 0%;
+  cursor:pointer;
+}
+
+.col-4, .col-1{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.pesquisaInput{
+  width: 140%;
+  padding: 7% 0% 5% 5%;
+  border: none;
+  background-color: white;
+  border-radius: 8px 8px 8px 8px;
+
+}
+
+.pesquisaInput:focus{
+  margin: none;
+  outline: none;
+}
+
+.pesquisaIcon .botao{
+  width: 100%;
+  margin-left: 100%;
+  padding: 25% 0% 15% 0%;
+  background-color: transparent;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+/* ! Area User */
+
+.div-area-user{
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.icone-area-user{
+  margin-left: -5%;
+}
+
+.botao-area-user{
+  border: none;
+  background-color: transparent;
+}
+
+.opc-menu a{
+  text-decoration: none;
+  color: black;
+}
+
+.iconeSessaoUser{
+  font-size: 200%;
+}
+
+.iconeMenuUser{
+  margin-bottom: 10px;
+}

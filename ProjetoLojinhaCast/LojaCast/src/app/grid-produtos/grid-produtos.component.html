@@ -1,0 +1,22 @@
+<body>
+  <div class="container">
+    <div class="card" *ngFor="let produto of produtos">
+      <a [routerLink]="['/descricaoProduto', produto.idImagem ]" routerLinkActive="router-link-active"><img src="../../assets/produto-{{produto.idImagem}}.jpg"></a>
+      <div class="card-body">
+        <h5 class="card-title">{{ produto.nomeProduto }}</h5>
+        <p id="precoAtual"><b>R$ {{produto.precoProduto }}</b></p>
+      <p>À vista no PIX</p>
+      <p class="card-text">{{ produto.descricaoProduto }}</p>
+
+      <div class="container">
+        <div class="row">
+          <div class="btn-group">
+            <a (click)="comprarProduto(produto.id)" class="btn botaoCompra" aria-current="page">Comprar</a>
+            <a (click)="adicionarCarrinho(produto.id)" class="btn botaoCarrinho"><mat-icon>add_shopping_cart</mat-icon></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

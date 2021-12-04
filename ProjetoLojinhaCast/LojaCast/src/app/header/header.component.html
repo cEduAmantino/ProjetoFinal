@@ -1,0 +1,121 @@
+<div class="corpo-header">
+  <div class="barra-pesquisa-user">
+    <div class="container max-width">
+      <div class="row align-items-start">
+        <div class="col-1">
+          <button class="botaoMenuPrincipal" mat-icon-button [matMenuTriggerFor]="menuPrincipal">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <mat-menu #menuPrincipal="matMenu">
+            <button mat-menu-item>
+              <span>Hardware</span>
+            </button>
+            <button mat-menu-item>
+              <span>Periféricos</span>
+            </button>
+            <button mat-menu-item>
+              <span>Games</span>
+            </button>
+            <button mat-menu-item>
+              <span>Cadeiras</span>
+            </button>
+            <button mat-menu-item>
+              <span><a (click)="goToHome()"></a> Computadores</span>
+            </button>
+            <button mat-menu-item>
+              <span>TV</span>
+            </button>
+            <button mat-menu-item>
+              <span>Celular & Telefonia</span>
+            </button>
+            <button mat-menu-item>
+              <span>Tablets, iPads e E-Readers</span>
+            </button>
+            <button mat-menu-item>
+              <span>Áudio</span>
+            </button>
+            <button mat-menu-item>
+              <span>SmartHome</span>
+            </button>
+          </mat-menu>
+
+        </div>
+        <div class="col-2">
+          <a><img class="img-icone-loja" src="../../assets/icone_loja.PNG" (click)="goToHome()"></a>
+        </div>
+        <div class="col-6">
+          <div class="container pesquisaCabecalho">
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <input type="text" class="pesquisaInput" placeholder="Pesquisa">
+              </div>
+              <div class="col-1 pesquisaIcon">
+                <button class="botao" type="button"><mat-icon>search</mat-icon></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="container div-area-user">
+            <div class="row">
+              <div class="col icone-area-user">
+                <button class="botao-area-user" mat-icon-button [matMenuTriggerFor]="menuUser">
+                  <mat-icon class="iconeSessaoUser iconeMenuUser" >account_circle</mat-icon>
+                </button>
+                <mat-menu #menuUser="matMenu">
+                  <button class="opc-menu" mat-menu-item (click)="goToLogin()">
+                    <mat-icon>login</mat-icon>
+                    <span> Login </span>
+                  </button>
+                  <button class="opc-menu" mat-menu-item (click)="goToCadastro()">
+                    <mat-icon>person_add</mat-icon>
+                    <span>Cadastrar</span>
+                  </button>
+                </mat-menu>
+              </div>
+              <div class="col icone-area-user">
+                <button class="botao-area-user">
+                  <mat-icon class="iconeSessaoUser">question_answer</mat-icon>
+                </button>
+              </div>
+              <div class="col icone-area-user">
+                <button class="botao-area-user">
+                  <mat-icon class="iconeSessaoUser">favorite</mat-icon>
+                </button>
+              </div>
+              <div class="col icone-area-user">
+                <button class="botao-area-user">
+                  <mat-icon class="iconeSessaoUser" (click)="goToCart()">shopping_cart</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--
+  <mat-drawer-container class="container-sidebar">
+    <mat-drawer #drawer class="campo-sidenav" mode="side">
+      <h2>Categorias</h2>
+      <p>Hardware</p>
+      <p>Periféricos</p>
+      <p>Games</p>
+      <p>Cadeiras</p>
+      <p>Computadores</p>
+      <p>TV</p>
+      <p>Celular & Telefonia</p>
+      <p>Tablets, iPads e E-Readers</p>
+      <p>Áudio</p>
+      <p>SmartHome</p>
+    </mat-drawer>
+    <div class="botao-sidenav-div">
+      <button class="botao-sidenav" type="button" mat-button (click)="drawer.toggle()">
+        <img class="imgIconMenu " src="https://icons.getbootstrap.com/assets/icons/list.svg">
+      </button>
+    </mat-drawer-container>
+-->

@@ -1,0 +1,51 @@
+
+<mat-card class="card-update-usuario">
+  <div class="div-tittle">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-10">
+          <mat-card-title class="tittle">Update Usuário</mat-card-title>
+        </div>
+        <div class="col-2">
+          <button (click) = goBack() class = "btn goBackButton">Voltar</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="form-group">
+    <label> Nome </label>
+    <input type="text" class="form-control" id="firstName" [(ngModel)]="usuario.nome" name="firstName">
+  </div>
+
+  <div class="form-group">
+    <label> CPF </label>
+    <input type="text" class="form-control" id="lastName" [(ngModel)]="usuario.cpf" name="lastName">
+  </div>
+
+  <div class="form-group">
+    <label> Email </label>
+    <input type="text" class="form-control" id="emailId" [(ngModel)]="usuario.email" name="emailId">
+  </div>
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+
+      </div>
+      <div class="col-4 ">
+
+        <button class="btn botaoEditar" type="submit" (click)="onSubmit()">Editar</button>
+
+      </div>
+      <div class="co-2">
+
+      </div>
+    </div>
+  </div>
+</mat-card>
